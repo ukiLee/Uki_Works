@@ -49,8 +49,9 @@ block content
 	section#uki_skills.skill_box
 		.container
 			.row
-				.col-xs-12.titlebar_line
-					h2.titles_line_font Skills
+				.col-xs-12
+					.titlebar_line
+						h2.titles_line_font Skills
 				.col-xs-12
 					ul.uki_skills
 						li
@@ -69,6 +70,10 @@ block content
 							i.fab.fa-npm
 						li
 							i.icon-bower
+						li
+							i.fab.fa-git
+						li
+							i.fab.fa-github-alt
 
 	section#uki_works
 		.container
@@ -78,10 +83,10 @@ block content
 				.col-xs-12
 					// 最多八個
 					ul.row.grid_box
-						+works('https://reger.com.tw/','background-image:url(images/brand/reger.svg);','銳覺設計','ReGeR Design','Html5、Css3、JQuery')
-						+works('https://goodinside.com.tw/','background-image:url(images/brand/good_inside.svg);','好蘊設計','Good Inside','Html5、Css3、JQuery')
 						+works('https://grassland.com.tw/','background-image:url(images/brand/grassland.svg);','草山境','Grassland','Html5、Css3、JQuery')
 						+works('https://joyin.tw/','background-image:url(images/brand/joyin.png);','哲隱會所','Joy In Villa','Html5、Css3、JQuery')
+						+works('https://reger.com.tw/','background-image:url(images/brand/reger.svg);','銳覺設計','ReGeR Design','Html5、Css3、JQuery')
+						+works('https://goodinside.com.tw/','background-image:url(images/brand/good_inside.svg);','好蘊設計','Good Inside','Html5、Css3、JQuery')
 						+works('https://mystar.com.tw/','background-image:url(images/brand/mystar.svg);','明星保養品','MYSTAR','Pug、Sass、JQuery、Gulp')
 						+works('https://meizir.com/','background-image:url(images/brand/meiaka.svg);','梅仔咖','meizir','Html5、Css3、JQuery')
 						+works('https://t-sweet.com.tw/','background-image:url(images/brand/t-sweet.png);','微甜森林','Sweetforest','Html5、Css3、JQuery')

@@ -158,7 +158,7 @@ gulp.task('watch', function() {
 
 //Push Github Task
 gulp.task('deploy', function() {
-  return gulp.src('./build/**/*')
+  return gulp.src('./bulid/**/*')
     .pipe($.ghPages());
 });
 
