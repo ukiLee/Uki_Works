@@ -1,4 +1,9 @@
 .tmp
+.sass-cache/
+*.css.map
+*.sass.map
+*.scss.map
+bk
 bulid
 data
 node_modules

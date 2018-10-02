@@ -149,12 +149,17 @@ gulp.task('images', function() {
     .pipe(gulp.dest('./bulid/images'))
 });
 
-
 //Watch Task
 gulp.task('watch', function() {
   gulp.watch('source/**/*.pug', ['pug']);
   gulp.watch('source/scss/**/*.scss', ['sass']);
   gulp.watch('source/js/*.js', ['scripts']);
+});
+
+//Push Github Task
+gulp.task('deploy', function() {
+  return gulp.src('./build/**/*')
+    .pipe($.ghPages());
 });
 
 //Sequence Task
