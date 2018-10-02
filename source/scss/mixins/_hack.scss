@@ -1,7 +1,0 @@
-//IE hack
-@mixin inline-block {
-	display: inline-block;
-	vertical-align: top;
-	zoom:1;
-	*display: inline;
-}
