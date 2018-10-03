@@ -3324,35 +3324,37 @@ input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-o
 
 .grid_box { list-style: none; letter-spacing: 1px; }
 
-.grid_box > li .pic-box { background: #f2f2f2; }
+.grid_box li .pic-box { background: #f2f2f2; }
 
-.grid_box > li .pic-box .moveimg { background-origin: content-box; }
+.grid_box li .pic-box .moveimg { background-origin: content-box; }
 
-.grid_box > li .pic-box .moveimg .imgbox { background-size: contain; }
+.grid_box li .pic-box .moveimg .imgbox { background-size: contain; }
 
-@media all and (min-width: 768px) { .grid_box > li .pic-box .moveimg.square { padding: 25px; } }
+@media all and (min-width: 768px) { .grid_box li .pic-box .moveimg.square { padding: 25px; } }
 
-@media all and (max-width: 768px) { .grid_box > li .pic-box .moveimg.square { padding: 15px; } }
+@media all and (max-width: 768px) { .grid_box li .pic-box .moveimg.square { padding: 15px; } }
 
-.grid_box > li .pic-box .caption h3 { font-size: calc(16px + 6 * ( (100vw - 420px) / 604)); }
+.grid_box li .pic-box .caption h3 { font-size: calc(16px + 6 * ( (100vw - 420px) / 604)); }
 
-@media screen and (max-width: 420px) { .grid_box > li .pic-box .caption h3 { font-size: 16px; } }
+@media screen and (max-width: 420px) { .grid_box li .pic-box .caption h3 { font-size: 16px; } }
 
-@media screen and (min-width: 1024px) { .grid_box > li .pic-box .caption h3 { font-size: 22px; } }
+@media screen and (min-width: 1024px) { .grid_box li .pic-box .caption h3 { font-size: 22px; } }
 
-.grid_box > li .pic-box .caption h3 a { color: #333; display: block; }
+.grid_box li .pic-box .caption h3 a { color: #333; display: block; }
 
-.grid_box > li .pic-box .caption h3 a:hover, .grid_box > li .pic-box .caption h3 a:focus { color: #ffb81e; }
+.grid_box li .pic-box .caption h3 a:hover, .grid_box li .pic-box .caption h3 a:focus { color: #ffb81e; }
 
-.grid_box > li .pic-box .caption .engsub { color: #999; font-size: calc(12px + 2 * ( (100vw - 420px) / 604)); line-height: 120%; text-transform: uppercase; }
+.grid_box li .pic-box .caption .engsub { color: #999; font-size: calc(12px + 2 * ( (100vw - 420px) / 604)); line-height: 120%; text-transform: uppercase; }
 
-@media screen and (max-width: 420px) { .grid_box > li .pic-box .caption .engsub { font-size: 12px; } }
+@media screen and (max-width: 420px) { .grid_box li .pic-box .caption .engsub { font-size: 12px; } }
 
-@media screen and (min-width: 1024px) { .grid_box > li .pic-box .caption .engsub { font-size: 14px; } }
+@media screen and (min-width: 1024px) { .grid_box li .pic-box .caption .engsub { font-size: 14px; } }
 
-.grid_box > li .pic-box .caption .skill { color: #0f475f; /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ font-size: 13px; /* 9 */ font-size: 1.3rem; /* 9 */ text-transform: uppercase; }
+.grid_box li .pic-box .caption .skill { color: #0f475f; /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ font-size: 13px; /* 9 */ font-size: 1.3rem; /* 9 */ text-transform: uppercase; }
 
-@media all and (max-width: 768px) { .grid_box > li .pic-box .caption .skill { display: none; } }
+@media all and (max-width: 768px) { .grid_box li .pic-box .caption .skill { display: none; } }
+
+.grid_box .slick-dots { bottom: -18px; }
 
 @media print { @page { size: 210mm 297mm;
     margin: 5mm; }
