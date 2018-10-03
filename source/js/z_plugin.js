@@ -1,24 +1,19 @@
+// 作品輪播-Slick carousel
 
-(function($) {
-	//-Slider
-    $('.slider').slick({
+$(function() {
+    $('.jq_carousel').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        mobileFirst: true,
+        arrows: false,
         dots: true,
-        infinite: true,
-        speed: 3000,
-        fade: true,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        pauseOnHover: false,
-        cssEase: 'ease-in-out',
         responsive: [{
-            breakpoint: 1199,
-            settings: {
-                dots: false,
-                arrows: false,
-                centerMode: true,
-                centerPadding: '40px',
-                slidesToShow: 1
-            }
+            breakpoint: 769,
+            settings: 'unslick'
         }]
     });
-})(jQuery);
+
+    $(window).on('resize', function() {
+        $('.jq_carousel').slick('resize');
+    });
+});

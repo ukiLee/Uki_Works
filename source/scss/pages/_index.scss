@@ -167,7 +167,7 @@
 .grid_box {
     list-style: none;
     letter-spacing: 1px;
-    >li {
+    li {
         .pic-box {
             background: darken($white,5%);
             .moveimg {
@@ -212,5 +212,8 @@
                 }
             }
         }
+    }
+    .slick-dots {
+        bottom: -18px;
     }
 }
